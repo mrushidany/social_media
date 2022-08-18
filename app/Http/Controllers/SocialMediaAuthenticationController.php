@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -17,8 +18,10 @@ class SocialMediaAuthenticationController extends Controller
     {
         try {
             $user = Socialite::driver('facebook')->stateless()->user();
-
-            dd($user->email);
+            $save_user = User::updateOrCreate([
+                'name' => $user->name,
+                'email' => $user->email,
+            ]);
         } catch (\Throwable $th) {
             throw $th;
         }
