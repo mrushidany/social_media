@@ -20,6 +20,12 @@ Route::get('/', function () {
 
 // Facebook Authentication URL'S
 Route::prefix('facebook')->name('facebook')->group(function (){
-    Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('facebook_login');
-    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('facebook_callback');
+    Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('login');
+    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('callback');
+});
+
+// Facebook Authentication URL'S
+Route::prefix('twitter')->name('twitter')->group(function (){
+    Route::get('auth', [SocialMediaAuthenticationController::class, 'twitterLogin'])->name('login');
+    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromTwitter'])->name('callback');
 });

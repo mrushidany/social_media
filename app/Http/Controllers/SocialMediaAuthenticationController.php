@@ -10,7 +10,34 @@ class SocialMediaAuthenticationController extends Controller
 
     public function facebookLogin()
     {
+        return Socialite::driver('facebook')->redirect();
+    }
 
+    public function callbackFromFacebook(Request $request)
+    {
+        try {
+            $user = Socialite::driver('facebook')->stateless()->user();
+
+            dd($user);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    public function twitterLogin()
+    {
+        return Socialite::driver('twitter')->redirect();
+    }
+
+    public function callbackFromTwitter(Request $request)
+    {
+        try {
+            $user = Socialite::driver('twitter')->email;
+
+            dd($user);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
     }
 
 }
