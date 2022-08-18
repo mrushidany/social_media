@@ -34,8 +34,3 @@ Route::prefix('instagram')->name('instagram')->group(function (){
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromInstagram'])->name('callback');
 });
 
-//Twitter Authentication URL'S
-Route::prefix('twitter')->name('twitter')->group(function (){
-    Route::get('auth', [SocialMediaAuthenticationController::class, 'twitterLogin'])->name('login');
-    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromTwitter'])->name('callback');
-});
