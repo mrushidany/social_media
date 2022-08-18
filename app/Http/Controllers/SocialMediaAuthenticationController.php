@@ -18,7 +18,7 @@ class SocialMediaAuthenticationController extends Controller
         try {
             $user = Socialite::driver('facebook')->stateless()->user();
 
-            dd($user);
+            dd($user->email);
         } catch (\Throwable $th) {
             throw $th;
         }
