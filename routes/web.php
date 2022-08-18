@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 // Facebook Authentication URL'S
 Route::prefix('facebook')->name('facebook')->group(function (){
@@ -24,7 +28,13 @@ Route::prefix('facebook')->name('facebook')->group(function (){
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('callback');
 });
 
-// Facebook Authentication URL'S
+//Instagram Authentication URL'S
+Route::prefix('instagram')->name('instagram')->group(function (){
+    Route::get('auth', [SocialMediaAuthenticationController::class, 'instagramLogin'])->name('login');
+    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromInstagram'])->name('callback');
+});
+
+//Twitter Authentication URL'S
 Route::prefix('twitter')->name('twitter')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'twitterLogin'])->name('login');
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromTwitter'])->name('callback');
