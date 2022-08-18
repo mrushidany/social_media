@@ -8,5 +8,9 @@ use Laravel\Socialite\Facades\Socialite;
 class SocialMediaAuthenticationController extends Controller
 {
 
-    
+    public function facebookLogin()
+    {
+
+    }
+
 }

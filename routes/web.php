@@ -18,3 +18,8 @@ Route::get('/', function () {
     return view('home');
 });
 
+// Facebook Authentication URL'S
+Route::prefix('facebook')->name('facebook')->group(function (){
+    Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('facebook_login');
+    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('facebook_callback');
+});
