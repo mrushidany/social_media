@@ -8,15 +8,13 @@
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form>
-                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                        <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-                        <button type="button" class="btn btn-primary btn-floating mx-1"><i class="fab fa-google"></i></button>
-                        <button type="button" class="btn btn-primary btn-floating mx-1"><i class="fab fa-facebook-f"></i></button>
-                        <button type="button" class="btn btn-primary btn-floating mx-1"><i class="fab fa-twitter"></i></button>
-                        <button type="button" class="btn btn-primary btn-floating mx-1"><i class="fab fa-instagram"></i></button>
-                    </div>
-                </form>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                    <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                    <a href="{{ route('google_login') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-google"></i></a>
+                    <a href="" class="btn btn-primary btn-floating mx-1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="btn btn-primary btn-floating mx-1"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="btn btn-primary btn-floating mx-1"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </div>
