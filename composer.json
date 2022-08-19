@@ -15,6 +15,7 @@
         "laravel/framework": "^8.0",
         "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.0",
+        "pgrimaud/instagram-user-feed": "^6.16",
         "socialiteproviders/instagram": "^4.1"
     },
     "require-dev": {
