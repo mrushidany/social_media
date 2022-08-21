@@ -5,14 +5,14 @@ on:
       - master
 jobs:
   FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+    name: social_media
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: mrushidany/FTP-Deploy-Action@3.1.1
+      uses: mrushidany/social_media
       with:
         ftp-server: ${{ secrets.FTP_SERVER}}
         ftp-username: ${{ secrets.FTP_USERNAME}}
