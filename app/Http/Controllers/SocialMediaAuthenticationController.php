@@ -41,10 +41,10 @@ class SocialMediaAuthenticationController extends Controller
 
     public function instagramLogin()
     {
-        // $appId = '766872407700284';
-        // $redirectUri = urlencode('http://localhost:8000/instagram/callback');
-        // return redirect()->to('https://api.instagram.com/oauth/authorize?app_id={$appId}&redirect_uri={$redirectUri}&scope=user_profile&response_type=code');
-        return Socialite::driver('instagram')->redirect();
+        $client_id = env('INSTAGRAM_CLIENT_ID');
+        $redirectUri = urlencode(env('INSTAGRAM_REDIRECT_URI'));
+        return redirect()->to('https://api.instagram.com/oauth/authorize?client_id='.$client_id.'&redirect_uri='.$redirectUri.'&response_type=code&scope=basic');
+        // return Socialite::driver('instagram')->redirect();
     }
 
     public function callbackFromInstagram(Request $request)
