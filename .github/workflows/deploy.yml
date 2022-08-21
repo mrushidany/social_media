@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  Social-Media-Deploy-Action
+  Social-Media-Deploy-Action:
     name: Social-Media-Deploy-Action
     runs-on: ubuntu-latest
     steps:
@@ -12,8 +12,8 @@ jobs:
       with:
         fetch-depth: 2
     - name: Social-Media-Deploy-Action
-    uses: mrushidany/social_media
-    with:
-      ftp-server: ${{ secrets.FTP_SERVER}}
-      ftp-username: ${{ secrets.FTP_USERNAME}}
-      ftp-password: ${{ secrets.FTP_PASSWORD}}
+      uses: mrushidany/social_media@3
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER}}
+        ftp-username: ${{ secrets.FTP_USERNAME}}
+        ftp-password: ${{ secrets.FTP_PASSWORD}}
