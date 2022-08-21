@@ -12,7 +12,6 @@ jobs:
       with:
         fetch-depth: 2
     - name: Social-Media-Deploy-Action
-      uses: mrushidany/social_media@master
       with:
         ftp-server: ${{ secrets.FTP_SERVER}}
         ftp-username: ${{ secrets.FTP_USERNAME}}
