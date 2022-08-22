@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\FacebookUser;
+use App\Models\InstagramUser;
 use App\Models\User;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
@@ -85,14 +86,20 @@ class SocialMediaAuthenticationController extends Controller
 
             $content = $response->getBody()->getContents();
             $oAuth = json_decode($content);
-            dd($oAuth);
 
-            // Get instagram user name
-            $username = $oAuth->username;
+            //Saving the user information
+            $save_user = InstagramUser::updateOrCreate([
+                'instagram_id' => $oAuth->id,
+                'username' => $oAuth->username,
+                'account_type' => $oAuth->account_type
+            ]);
 
-            dd($username);
+            if($save_user){
+                return redirect()->route('welcome');
+            }else {
+                return redirect()->route('home');
+            }
 
-            // do your code here
         } catch (\Throwable $th) {
             throw $th;
         }

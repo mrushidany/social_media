@@ -15,6 +15,9 @@ class CreateInstagramUsersTable extends Migration
     {
         Schema::create('instagram_users', function (Blueprint $table) {
             $table->id();
+            $table->string('instagram_id');
+            $table->string('username');
+            $table->string('account_type');
             $table->timestamps();
         });
     }
