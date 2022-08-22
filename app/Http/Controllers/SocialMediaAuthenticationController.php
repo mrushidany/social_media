@@ -49,6 +49,7 @@ class SocialMediaAuthenticationController extends Controller
 
     public function callbackFromInstagram(Request $request)
     {
+        dd($request->code);
         try {
             $user = Socialite::driver('instagram')->stateless()->user();
 
