@@ -85,6 +85,7 @@ class SocialMediaAuthenticationController extends Controller
 
             $content = $response->getBody()->getContents();
             $oAuth = json_decode($content);
+            dd($oAuth);
 
             // Get instagram user name
             $username = $oAuth->username;
