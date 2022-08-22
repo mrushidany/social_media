@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                    <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                    <p class="lead fw-normal mb-0 me-3">Sign in with :-</p>
                     <a href="{{ route('facebooklogin') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-facebook-f"></i></a>
                     <a href="{{ route('instagramlogin') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-instagram"></i></a>
                 </div>

@@ -43,7 +43,7 @@ class SocialMediaAuthenticationController extends Controller
     {
         $client_id = env('INSTAGRAM_CLIENT_ID');
         $redirectUri = urlencode(env('INSTAGRAM_REDIRECT_URI'));
-        return redirect()->to('https://api.instagram.com/oauth/authorize?client_id='.$client_id.'&redirect_uri='.$redirectUri.'&response_type=code&scope=user_profile,user_media');
+        return redirect()->to("https://api.instagram.com/oauth/authorize?app_id={$client_id}&redirect_uri={$redirectUri}&scope=user_profile,user_media&response_type=code");
         // return Socialite::driver('instagram')->redirect();
     }
 
