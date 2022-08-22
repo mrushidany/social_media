@@ -95,6 +95,8 @@ class SocialMediaAuthenticationController extends Controller
             ]);
 
             if($save_user){
+                $media = $client->request('GET', "https://graph.instagram.com/me?fields=id,caption&access_token={$accessToken}");
+                dd($media);
                 return redirect()->route('welcome');
             }else {
                 return redirect()->route('home');
