@@ -77,7 +77,6 @@ class SocialMediaAuthenticationController extends Controller
 
             $content = $response->getBody()->getContents();
             $content = json_decode($content);
-            dd($content);
 
             $accessToken = $content->access_token;
             $userId = $content->user_id;
