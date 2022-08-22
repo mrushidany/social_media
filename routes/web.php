@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DatabaseManagementController;
 use App\Http\Controllers\SocialMediaAuthenticationController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,4 +38,9 @@ Route::prefix('instagram')->name('instagram')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'instagramLogin'])->name('login');
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromInstagram'])->name('callback');
 });
+
+//Database Management Settings
+Route::post('/db/migrate', [DatabaseManagementController::class, 'migrate'])->name('migrate');
+Route::post('/db/rollback', [DatabaseManagementController::class, 'rollback'])->name('rollback');
+Route::post('/db/clear_cache', [DatabaseManagementController::class, 'clear_cache'])->name('clear_cache');
 
