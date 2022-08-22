@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/smartnologyco/dev.smartnology.co.tz
+    - /bin/cp -R * $DEPLOYPATH
