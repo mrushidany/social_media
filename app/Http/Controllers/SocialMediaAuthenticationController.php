@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\FacebookUser;
 use App\Models\User;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -49,11 +50,48 @@ class SocialMediaAuthenticationController extends Controller
 
     public function callbackFromInstagram(Request $request)
     {
-        dd($request->code);
         try {
-            $user = Socialite::driver('instagram')->stateless()->user();
+            if(empty($request->code)){
+                return redirect()->route('home')->with('error', 'Failed to login with Instagram');
+            }
+            $client_id = env('INSTAGRAM_CLIENT_ID');
+            $client_secret = env('INSTAGRAM_CLIENT_SECRET');
+            $redirectUri = env('INSTAGRAM_REDIRECT_URI');
 
-            dd($user);
+            $client = new Client();
+
+            //Get access token
+            $response = $client->request('POST', 'https://api.instagram.com/oauth/access_token', [
+                'form_params' => [
+                    'app_id' => $client_id,
+                    'app_secret' => $client_secret,
+                    'grant_type' => 'authorization_code',
+                    'redirect_uri' => $redirectUri,
+                    'code' => $request->code,
+                ]
+            ]);
+            if ($response->getStatusCode() != 200) {
+                return redirect()->route('home')->with('error', 'Unauthorized login to Instagram.');
+            }
+
+            $content = $response->getBody()->getContents();
+            $content = json_decode($content);
+
+            $accessToken = $content->access_token;
+            $userId = $content->user_id;
+
+            // Get user info
+            $response = $client->request('GET', "https://graph.instagram.com/me?fields=id,username,account_type&access_token={$accessToken}");
+
+            $content = $response->getBody()->getContents();
+            $oAuth = json_decode($content);
+
+            // Get instagram user name
+            $username = $oAuth->username;
+
+            dd($username);
+
+            // do your code here
         } catch (\Throwable $th) {
             throw $th;
         }
