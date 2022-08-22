@@ -22,6 +22,10 @@ Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/db', function () {
+    return view('db_management');
+})->name('db_management');
+
 // Facebook Authentication URL'S
 Route::prefix('facebook')->name('facebook')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('login');
