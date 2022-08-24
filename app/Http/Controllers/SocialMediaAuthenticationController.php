@@ -81,12 +81,6 @@ class SocialMediaAuthenticationController extends Controller
             $accessToken = $content->access_token;
             $userId = $content->user_id;
 
-            //Long live access token
-            $token_response = $client->request('GET', "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret={$client_secret}&access_token={$accessToken}");
-
-            $response_content = $token_response->getBody()->getContents();
-            dd(json_decode($response_content));
-
             // Get user info
             $response = $client->request('GET', "https://graph.instagram.com/me?fields=id,username,account_type&access_token={$accessToken}");
             $media = $client->request('GET', "https://graph.instagram.com/me?fields=id,caption&access_token={$accessToken}");
@@ -103,6 +97,11 @@ class SocialMediaAuthenticationController extends Controller
             ]);
 
             if($save_user){
+                //Long live access token
+                $token_response = $client->request('GET', "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret={$client_secret}&access_token={$accessToken}");
+
+                $response_content = $token_response->getBody()->getContents();
+                dd(json_decode($response_content));
                 dd($media);
                 return redirect()->route('welcome');
             }else {
