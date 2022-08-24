@@ -124,7 +124,7 @@ class SocialMediaAuthenticationController extends Controller
 
         $instagram_user = InstagramUser::where('id', 1)->select('instagram_id')->first();
 
-        $response = $client->request('GET', "graph.instagram.com/ig_hashtag_search?user_id={$instagram_user->instagram_id}&q=coke&access_token={$access_token->live_token}");
+        $response = $client->request('GET', "https://graph.facebook.com/v14.0/ig_hashtag_search?user_id={$instagram_user->instagram_id}&q=coke&access_token={$access_token->live_token}");
 
         dd($response);
     }
