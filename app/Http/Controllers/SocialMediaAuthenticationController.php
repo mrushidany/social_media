@@ -92,6 +92,7 @@ class SocialMediaAuthenticationController extends Controller
             $save_user = InstagramUser::updateOrCreate([
                 'instagram_id' => $oAuth->id,
                 'username' => $oAuth->username,
+                'user_id'=> $userId,
                 'account_type' => $oAuth->account_type
             ]);
 
