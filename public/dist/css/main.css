@@ -129,25 +129,24 @@ section{
 .home-bg .home{
     min-height: 70rem;
     display: flex;
-    align-items: center;
-    text-align: start;
 }
 
 .home-bg .home .content{
     width: 50rem;
     text-align: start;
-    margin-top: 9rem;
+    margin-top: 30rem;
+    margin-left: -8.5rem;
+    padding: 0 2rem;
+    font-family: 'Averta' sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px ;
+    line-height: 48px ;
+    color: #FFFFFF ;
 }
 
 .home-bg .home .content p {
     padding: 1rem 0;
-    font-family: 'Averta' sans-serif !important;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px !important;
-    line-height: 48px !important;
-    color: #FFFFFF !important;
-    margin-left: 2rem;
 }
 
 .btn {

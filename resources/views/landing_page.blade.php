@@ -23,9 +23,7 @@
 <div class="home-bg">
     <section class="home" id="home">
         <div class="content">
-            <div class="row">
-                <p>Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
-            </div>
+            <p>Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
         </div>
     </section>
 </div>
