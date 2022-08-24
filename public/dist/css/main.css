@@ -2,8 +2,10 @@
 
 @font-face {
     font-family: 'Averta';
-    font-style: normal;
-    src: url('../../images/ncba_mpawa.png') format('opentype');
+    src: url('../fonts/WEB/AvertaDemoPE-Regular.eot');
+    src: url('../fonts/WEB/AvertaDemoPE-Regular.woff') format('woff'),
+         url('../fonts/WEB/AvertaDemoPE-Regular.woff2') format('woff2'),
+         url('../fonts/OTF/AvertaDemoPE-Regular.otf') format('opentype')
 }
 
 :root{
@@ -22,7 +24,6 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
-    text-transform: capitalize;
 }
 
 *::selection{
@@ -69,7 +70,6 @@ section{
 .heading h3 {
     font-size: 4rem;
     color: var(--black);
-    font-family: 'Merienda One', cursive;
 }
 
 .header{
@@ -130,6 +130,7 @@ section{
     min-height: 70rem;
     display: flex;
     align-items: center;
+    text-align: start;
 }
 
 .home-bg .home .content{
@@ -139,26 +140,14 @@ section{
 }
 
 .home-bg .home .content p {
+    padding: 1rem 0;
     font-family: 'Averta' sans-serif !important;
     font-style: normal;
     font-weight: 700;
     font-size: 40px !important;
     line-height: 48px !important;
     color: #FFFFFF !important;
-    text-transform: none;
-}
-
-.home-bg .home .content h3 {
-    font-size: 6rem;
-    color: var(--black);
-    font-family: 'Merienda One', cursive;
-}
-
-.home-bg .home .content p{
-    padding: 1rem 0;
-    font-size: 1.6rem;
-    color: var(--black);
-    line-height: 2;
+    margin-left: 2rem;
 }
 
 .btn {
@@ -330,6 +319,14 @@ section{
 .footer {
     max-width: 100%;
     background: #392B27;
+    font-family: 'Averta', sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: none;
 }
 
 .footer .box-container {
@@ -337,46 +334,24 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
     align-items: flex-start;
+    margin-top: 2rem;
 }
 
 .footer .box-container .box {
     text-align: center;
-}
 
-.footer .box-container .box i {
-    font-size: 2.5rem;
-    line-height: 6rem;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    color: var(--white);
-    margin-bottom: 1rem;
 }
 
 .footer .box-container .box h3 {
     margin: .5rem 0;
     font-size: 2rem;
-    color: var(--black);
+    color: #FFFFFF;;
 }
 
 .footer .box-container .box p {
     line-height: 2;
     font-size: 1.6rem;
     color: var(--light-color);
-}
-
-.footer .credit {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 2.5rem;
-    border-top: var(--border);
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.footer .credit span {
-    color: var(--main-color);
 }
 
 .red {
@@ -432,10 +407,6 @@ section{
 
     .home-bg .home{
         justify-content: center;
-    }
-
-    .home-bg .home .content h3{
-        font-size: 4rem;
     }
 
     .about .content h3 {
