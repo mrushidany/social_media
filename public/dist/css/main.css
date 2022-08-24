@@ -134,7 +134,18 @@ section{
 
 .home-bg .home .content{
     width: 50rem;
-    text-align: center;
+    text-align: start;
+    margin-top: 9rem;
+}
+
+.home-bg .home .content p {
+    font-family: 'Averta' sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px !important;
+    line-height: 48px !important;
+    color: #FFFFFF !important;
+    text-transform: none;
 }
 
 .home-bg .home .content h3 {
@@ -170,6 +181,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
+    margin-top: 4rem;
 }
 
 .about .image img {
@@ -315,6 +327,11 @@ section{
     margin: 1rem 0;
 }
 
+.footer {
+    max-width: 100%;
+    background: #392B27;
+}
+
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -360,6 +377,10 @@ section{
 
 .footer .credit span {
     color: var(--main-color);
+}
+
+.red {
+    color: red;
 }
 
 
