@@ -14,24 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="{{ asset('dist/css/main.css') }}" rel="stylesheet" />
     <title>NCBA Chuzi</title>
-
-    <style>
-        .divider:after,
-        .divider:before {
-            content: "";
-            flex: 1;
-            height: 1px;
-            background: #eee;
-        }
-        .h-custom {
-            height: calc(100% - 73px);
-        }
-        @media (max-width: 450px) {
-            .h-custom {
-            height: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
    @yield('content')
