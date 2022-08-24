@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AccessToken;
 use App\Models\FacebookUser;
 use App\Models\InstagramUser;
 use App\Models\User;
@@ -101,8 +102,14 @@ class SocialMediaAuthenticationController extends Controller
                 $token_response = $client->request('GET', "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret={$client_secret}&access_token={$accessToken}");
 
                 $response_content = $token_response->getBody()->getContents();
-                dd(json_decode($response_content));
-                dd($media);
+                $live_token = json_decode($response_content);
+
+                AccessToken::updateOrCreate([
+                    'user_id' => $save_user->id,
+                    'live_token' => $live_token->access_token,
+                    'token_type' => $live_token->token_type,
+                    'expires_in' => $live_token->expires_in
+                ]);
                 return redirect()->route('welcome');
             }else {
                 return redirect()->route('home');
