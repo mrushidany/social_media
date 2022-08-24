@@ -88,8 +88,6 @@ class SocialMediaAuthenticationController extends Controller
             $content = $response->getBody()->getContents();
             $oAuth = json_decode($content);
 
-            dd($oAuth);
-
             //Saving the user information
             $save_user = InstagramUser::updateOrCreate([
                 'instagram_id' => $oAuth->id,
@@ -124,7 +122,6 @@ class SocialMediaAuthenticationController extends Controller
         $client = new Client();
 
         $instagram_user = InstagramUser::where('id', 1)->select('instagram_id')->first();
-        dd($instagram_user->instagram_id);
 
         $response = $client->request('GET', "graph.instagram.com/ig_hashtag_search?user_id={$instagram_user->instagram_id}&q=coke");
 
