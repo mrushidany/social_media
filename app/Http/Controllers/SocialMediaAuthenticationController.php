@@ -120,10 +120,11 @@ class SocialMediaAuthenticationController extends Controller
 
     public function hashtagSearch(){
         $client = new Client();
+        $access_token = AccessToken::where('user_id', 1)->select('live_token')->first();
 
         $instagram_user = InstagramUser::where('id', 1)->select('instagram_id')->first();
 
-        $response = $client->request('GET', "graph.instagram.com/ig_hashtag_search?user_id={$instagram_user->instagram_id}&q=coke");
+        $response = $client->request('GET', "graph.instagram.com/ig_hashtag_search?user_id={$instagram_user->instagram_id}&q=coke&access_token={$access_token->live_token}");
 
         dd($response);
     }
