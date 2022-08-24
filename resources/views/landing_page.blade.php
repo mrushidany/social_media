@@ -1,37 +1,35 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="header">
-    <div class="container">
-        <div class="row mt-4">
-            <div class="col-lg-2 col-md-4 col-6">
-                <a class="logo" href="">
-                    <img src="{{ asset('images/ncba_mpawa.png') }}" alt="NCBA MPAWA">
-                </a>
-            </div>
-            <div class="col-lg-1 col-md-1 col-6">
-                <div style="text-align:right">
-                    <span class="menu"><i class="fa fa-bars"></i></span>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-7 col-sm-12">
-                <div class="navigations">
-                    <ul class="navs">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Campaign</a></li>
-                        <li><a href="">How to participate</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Contestors</a></li>
-                    </ul>
-                </div>
-            </div>
+<!-- header section starts -->
+<header class="header">
+    <section class="flex">
+        <a href="" class="logo">
+            <img src="{{ asset('images/ncba_mpawa.png') }}" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="">home</a>
+            <a href="">about companion</a>
+            <a href="">how to participate</a>
+            <a href="">testimonials</a>
+            <a href="">contestors</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+</header>
+<!-- header section ends -->
+
+<!-- home section starts -->
+<div class="home-bg">
+    <section class="home" id="home">
+        <div class="content">
+            <h3>coffee heaven</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero excepturi cumque error.</p>
+            <a href="#about" class="btn">about us</a>
         </div>
-    </div>
+    </section>
 </div>
-<section class="welcome">
-
-</section>
-
+<!-- home section ends -->
 
 
 @endsection
