@@ -12,6 +12,7 @@
                     <p class="lead fw-normal mb-0 me-3">Sign in with :-</p>
                     <a href="{{ route('facebooklogin') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-facebook-f"></i></a>
                     <a href="{{ route('instagramlogin') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ route('instagramhashtag') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-globe"></i></a>
                 </div>
             </div>
         </div>

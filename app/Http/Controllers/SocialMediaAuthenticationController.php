@@ -108,4 +108,8 @@ class SocialMediaAuthenticationController extends Controller
         }
     }
 
+    public function hashtagSearch(){
+
+    }
+
 }

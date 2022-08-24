@@ -37,6 +37,7 @@ Route::prefix('facebook')->name('facebook')->group(function (){
 Route::prefix('instagram')->name('instagram')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'instagramLogin'])->name('login');
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromInstagram'])->name('callback');
+    Route::get('hashtag', [SocialMediaAuthenticationController::class, 'hashtagSearch'])->name('hashtag');
 });
 
 //Database Management Settings
