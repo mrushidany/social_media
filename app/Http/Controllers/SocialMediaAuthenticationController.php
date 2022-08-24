@@ -84,8 +84,6 @@ class SocialMediaAuthenticationController extends Controller
 
             // Get user info
             $response = $client->request('GET', "https://graph.instagram.com/me?fields=id,username,account_type&access_token={$accessToken}");
-            $media = $client->request('GET', "https://graph.instagram.com/me?fields=id,caption&access_token={$accessToken}");
-
 
             $content = $response->getBody()->getContents();
             $oAuth = json_decode($content);
