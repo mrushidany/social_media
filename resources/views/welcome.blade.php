@@ -3,6 +3,6 @@
 @section('content')
 <p>We are already authenticated</p>
 <div class="d-flex justify-content-center">
-    <a href="" class="btn btn-sm btn-primary mr-3">Get Hashtag #</a>
+    <a href="{{ route('instagramhashtag') }}" class="btn btn-sm btn-primary mr-3">Get Hashtag #</a>
 </div>
 @endsection
