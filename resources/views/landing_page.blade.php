@@ -341,7 +341,14 @@
         </div>
 
         <div class="box">
-            <h3>Shopping</h3>
+            <h3>Support</h3>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="">Terms & Conditions</a> </li>
+                    <li><a href="">Questions</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="box">
@@ -351,7 +358,12 @@
 
         <div class="box">
             <h3>Follow us on:</h3>
-
+            <div class="row social-links">
+                <img src="{{ asset('images/icons/facebook.png') }}">
+                <img src="{{ asset('images/icons/twitter.png') }}">
+                <img src="{{ asset('images/icons/instagram.png') }}">
+                <img src="{{ asset('images/icons/linkedin.png') }}">
+            </div>
         </div>
     </div>
 </section>
