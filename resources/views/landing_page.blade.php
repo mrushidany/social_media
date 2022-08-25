@@ -23,7 +23,7 @@
 <div class="home-bg">
     <section class="home" id="home">
         <div class="content">
-            <img src="{{ asset('images/chuzi_limekubali.png') }}" alt="Chuzi Limekubali">
+            <img src="{{ asset('images/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
             <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
         </div>
     </section>
