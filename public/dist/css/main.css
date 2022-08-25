@@ -394,6 +394,24 @@ section{
     transition: all 0.5s ease;
 }
 
+.chuzi {
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 17.3491px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #3AB3E5;
+    border-radius: 8.67453px;
+    padding: 14px 25px 14px 14px;
+    width: 40%;
+}
+
 
 
 
