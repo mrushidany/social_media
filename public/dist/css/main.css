@@ -501,7 +501,7 @@ section{
     max-width: 100%;
     background: #392B27;
     color: #FFFFFF;
-    margin-top: 3rem;
+    margin-top: 8rem !important;
 }
 
 .winners h3 {

@@ -145,7 +145,7 @@
     <div class="row">
         <h2>Chuzi <span style="color: #3AB3E5">Challenge</span></h2>
         <div class="col-md-6 mt-3 pt-4">
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis varius tortor dolor eu. Adipiscing nisl at adipiscing ut.</p>
+            <p class="">Tukikukopesha TSh 50,000 utabusti vipi biashara na utarudishaje ndani ya siku 5? Tupe madini ule buku 5 ya fasta kwenye M-Pesa yako.</p>
         </div>
     </div>
     <div class="row mt-4">
