@@ -324,6 +324,7 @@ section{
 }
 
 .footer {
+    margin-top: 8rem !important;
     max-width: 100%;
     background: #392B27;
     font-family: 'Averta', sans-serif !important;

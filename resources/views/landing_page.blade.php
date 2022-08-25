@@ -140,7 +140,7 @@
 <!-- Word from winners section ends -->
 
 <!-- Chuzi Challenge section starts -->
-<div class="container pt-0 participate-section">
+<div class="container pt-0 participate-section mb-3">
     <div class="row">
         <h2>Chuzi <span style="color: #3AB3E5">Challenge</span></h2>
         <div class="col-md-6 mt-3 pt-4">
@@ -329,14 +329,12 @@
             </div>
         </div>
     </div>
-
 </div>
-
 <!-- Chuzi Challenge section ends -->
 
 
 <!-- footer section starts -->
-<section class="footer">
+<section class="footer mt-5">
     <div class="box-container">
         <div class="box">
             <img src="{{ asset('images/ncba_mpawa_white.png') }}" alt="NCBA MPAWA"/>
