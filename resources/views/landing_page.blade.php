@@ -46,8 +46,8 @@
                     <h3>#Chuzilimekubali</h3>
                 </div>
                 <div class="row mt-5 chuzi-body">
-                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.</p>
-                    <p class="mt-2">At viverra lectus tincidunt sed duis cursus aliquam. Vive rra auctor adipiscing.consec tetur adipiscing elit. At vive rra lectus tincidunt sed duis cursus aliquam.a auctor adipiscing.</p>
+                    <p>Chuzi limekubali ukiwa na M-PAWA inayoletwa kwa ushirikiano wa Vodacom na M-PAWA. Kila unapoweka akiba, kukopa na kurejesha mkopo mapema basi unajishindia mpaka mara mbili (2) ya akiba yako. Kushinda ni rahisi sana, unapiga *150*00# unaingia kwenye MIKOPO NA AKIBA halafu unachagua M-PAWA na kufuata hatua rahisi za kuweka na kukopa.</p>
+                    <p class="mt-2">Jaribu leo uwe miongoni mwa washindi wa Chuzi limekubali.</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col">
@@ -88,8 +88,8 @@
     <div class="container">
        <div class="row">
             <div class="col-md-6">
-                <h3 class="mb-4">Word from our <span style="color: #3AB3E5;">Winners</span></h3>
-                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis varius tortor dolor eu. Adipiscing nisl at adipiscing ut.</p>
+                <h3 class="mb-4">Neno kutoka kwa <span style="color: #3AB3E5;">Washindi</span></h3>
+                <p class="mt-2">Washindi wetu wana yapi ya kusema?</p>
             </div>
         </div>
         <div class="row mt-5">
