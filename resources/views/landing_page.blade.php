@@ -60,6 +60,15 @@
                     <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.</p>
                     <p class="mt-2">At viverra lectus tincidunt sed duis cursus aliquam. Vive rra auctor adipiscing.consec tetur adipiscing elit. At vive rra lectus tincidunt sed duis cursus aliquam.a auctor adipiscing.</p>
                 </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <img src="{{ asset('images/avatar.png') }}">
+                    </div>
+                    <div class="col mt-4 subtitle">
+                        <h4>Vincent Luggerius</h4>
+                        <p>Manager NCBA</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

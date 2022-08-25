@@ -414,7 +414,7 @@ section{
 
 .chuzi-body {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 24px;
 }
 
@@ -423,6 +423,20 @@ section{
     text-justify: inter-word;
 }
 
+.subtitle {
+    margin-right: 34rem;
+    white-space: nowrap;
+}
+
+.subtitle h4 {
+    font-weight: 700;
+    font-size: 21.6863px;
+    line-height: 26px;
+
+    letter-spacing: 0.216863px;
+
+    color: #392B27;
+}
 
 /* media queries */
 
