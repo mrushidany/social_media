@@ -52,9 +52,13 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-7">
-            <div class=" chuzi">
+            <div class="chuzi">
                 <div class="title pt-4">
                     <h3>#Chuzilimekubali</h3>
+                </div>
+                <div class="row mt-5 chuzi-body">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.</p>
+                    <p class="mt-2">At viverra lectus tincidunt sed duis cursus aliquam. Vive rra auctor adipiscing.consec tetur adipiscing elit. At vive rra lectus tincidunt sed duis cursus aliquam.a auctor adipiscing.</p>
                 </div>
             </div>
         </div>
