@@ -135,7 +135,7 @@ section{
 .home-bg .home .content{
     width: 50rem;
     text-align: start;
-    margin-top: 30rem;
+    margin-top: 15rem;
     padding: 0 2rem;
     font-family: 'Averta' sans-serif !important;
     font-style: normal;
@@ -143,6 +143,7 @@ section{
     font-size: 40px ;
     line-height: 48px ;
     color: #FFFFFF ;
+    margin-left: 13rem;
 }
 
 .home-bg .home .content p {
