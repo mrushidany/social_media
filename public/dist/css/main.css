@@ -129,13 +129,13 @@ section{
 .home-bg .home{
     min-height: 70rem;
     display: flex;
+    margin-left: 13rem;
 }
 
 .home-bg .home .content{
     width: 50rem;
     text-align: start;
     margin-top: 30rem;
-    margin-left: -8.5rem;
     padding: 0 2rem;
     font-family: 'Averta' sans-serif !important;
     font-style: normal;
@@ -466,6 +466,109 @@ section{
 .chuzi-background img {
     height: 40rem;
     width: 120rem;
+}
+
+.winners {
+    max-width: 100%;
+    background: #392B27;
+    color: #FFFFFF;
+
+}
+
+.winners h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 39px;
+}
+
+.winners p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.focus {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    margin: 10px 0;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+}
+
+.inner-focus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.focus-icon {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 50%;
+    line-height: 1.7;
+}
+
+.play {
+    margin: 38%;
+}
+
+.lr {
+    padding: 0 10px;
+}
+
+.slide {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.social-card {
+    background: #FFFFFF;
+    border: 0.830028px solid #F8F8F8;
+    box-shadow: 0px 3.32011px 3.32011px rgba(150, 150, 150, 0.1);
+    border-radius: 6.64023px;
+}
+
+.social-card .heading{
+    display: inline;
+}
+
+.social-card .heading .name {
+    font-family: 'Mulish' , sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.6204px;
+    line-height: 15px;
+    letter-spacing: -0.249009px;
+    color: #2F2B2A;
+    margin-left: 1.5rem;
+}
+
+.social-card .body {
+    margin: 0 -1rem;
+}
+
+.social-card .likes {
+    display: inline;
+    background: #EAEEF1;
+    border-radius: 11.6204px;
+    padding: 0.5rem 1rem;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.6204px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.249009px;
+    color: #000000;
+    margin: 0 1rem;
 }
 
 /* media queries */
