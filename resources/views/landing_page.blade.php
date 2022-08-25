@@ -79,10 +79,12 @@
 <!-- about section ends -->
 
  <!-- How to participate section starts -->
- <div class="container mt-4">
+ <div class="container participate-section">
     <div class="row">
-        <h2>How to Participate</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis varius tortor dolor eu. Adipiscing nisl at adipiscing ut.</p>
+        <h2>How to <span style="color: #3AB3E5">Participate</span></h2>
+        <div class="col-md-6 mt-4 pt-4">
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis varius tortor dolor eu. Adipiscing nisl at adipiscing ut.</p>
+        </div>
     </div>
  </div>
 <!-- How to participate section ends -->

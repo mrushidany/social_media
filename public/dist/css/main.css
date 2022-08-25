@@ -444,6 +444,25 @@ section{
     margin-left: 20rem;
 }
 
+.participate-section {
+    margin-top: 8rem;
+}
+
+.participate-section h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 39px;
+    color: #323232;
+}
+
+.participate-section p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #969696;
+}
+
+
 .chuzi-background img {
     height: 40rem;
     width: 120rem;
