@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-7">
-            <div class="chuzi">
+            <div class="chuzi pt-3">
                 <div class="title pt-4">
                     <h3>#Chuzilimekubali</h3>
                 </div>
@@ -72,6 +72,7 @@
             </div>
         </div>
     </div>
+    {{-- <div class="chuzi-background"></div> --}}
 </div>
 <!-- about section ends -->
 

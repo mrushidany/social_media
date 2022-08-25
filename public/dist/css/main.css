@@ -438,6 +438,14 @@ section{
     color: #392B27;
 }
 
+.chuzi-background {
+    position: absolute;
+    background: url('../../images/chuzi-bg.png');
+    background-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 4.33726px;
+}
+
 /* media queries */
 
 @media (max-width: 991px){
