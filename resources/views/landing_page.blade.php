@@ -8,11 +8,11 @@
             <img src="{{ asset('images/ncba_mpawa.png') }}" alt="">
         </a>
         <nav class="navbar">
-            <a href="">Home</a>
-            <a href="">About companion</a>
-            <a href="">How to participate</a>
-            <a href="">Testimonials</a>
-            <a href="">Contestors</a>
+            <a href="#home">Home</a>
+            <a href="#about">About companion</a>
+            {{-- <a href="#how">How to participate</a> --}}
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contestors">Contestors</a>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
@@ -30,7 +30,7 @@
 <!-- home section ends -->
 
  <!-- about section starts -->
-<div class="container mt-4 pt-4">
+<div class="container mt-4 pt-4" id="about">
     <div class="row mt-4">
         <div class="col-lg-6 col-md-5">
             <div class="video-box" style="background-image: url('{{ asset('images/about_chuzi.png') }}')">
@@ -67,7 +67,7 @@
 <!-- about section ends -->
 
  <!-- How to participate section starts -->
- <div class="container participate-section">
+ {{-- <div class="container participate-section" id="how">
     <div class="row">
         <h2>How to <span style="color: #3AB3E5">Participate</span></h2>
         <div class="col-md-6 mt-4 pt-4">
@@ -79,11 +79,11 @@
 
         </div>
     </div>
- </div>
+ </div> --}}
 <!-- How to participate section ends -->
 
 <!-- Word from winners section starts -->
-<section class="winners">
+<section class="winners mt-5" id="testimonials">
     <div class="container">
        <div class="row">
             <div class="col-md-6">
@@ -140,7 +140,7 @@
 <!-- Word from winners section ends -->
 
 <!-- Chuzi Challenge section starts -->
-<div class="container pt-0 participate-section mb-3">
+<div class="container pt-0 participate-section mb-3" id="contestors">
     <div class="row">
         <h2>Chuzi <span style="color: #3AB3E5">Challenge</span></h2>
         <div class="col-md-6 mt-3 pt-4">
