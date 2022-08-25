@@ -440,10 +440,13 @@ section{
 
 .chuzi-background {
     position: absolute;
-    background: url('../../images/chuzi-bg.png');
-    background-blend-mode: normal;
-    opacity: 0.05;
-    border-radius: 4.33726px;
+    margin-top: -38rem;
+    margin-left: 20rem;
+}
+
+.chuzi-background img {
+    height: 40rem;
+    width: 120rem;
 }
 
 /* media queries */

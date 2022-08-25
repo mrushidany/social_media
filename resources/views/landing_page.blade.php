@@ -72,24 +72,20 @@
             </div>
         </div>
     </div>
-    {{-- <div class="chuzi-background"></div> --}}
+    <div class="chuzi-background">
+        <img src="{{ asset('images/chuzi-bg.png') }}" alt="">
+    </div>
 </div>
 <!-- about section ends -->
 
-
-
- <!-- challenge section starts -->
- <section class="challenge" id="challenge">
-    <div class="heading">
-        <h3>Chuzi Challenge</h3>
+ <!-- How to participate section starts -->
+ <div class="container mt-4">
+    <div class="row">
+        <h2>How to Participate</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis varius tortor dolor eu. Adipiscing nisl at adipiscing ut.</p>
     </div>
-    <div class="content">
-
-    </div>
-
-</section>
-<!-- challenge section ends -->
+ </div>
+<!-- How to participate section ends -->
 
 <!-- footer section starts -->
 <section class="footer">
