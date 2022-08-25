@@ -178,12 +178,20 @@ section{
 
 .about .content {
     flex: 1 1 40rem;
+    margin-top: -10rem;
 }
 
 .about .content h3{
-    font-size: 4.5rem;
-    color: var(--black);
-    font-family: 'Merienda One', cursive;
+    background: #3AB3E5;
+    border-radius: 8.67453px;
+    font-weight: 700;
+    font-size: 17.3491px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 14px 25px 17px 14px;
+    width: 40%;
 }
 
 .about .content p{
@@ -357,7 +365,34 @@ section{
     color: red;
 }
 
+.video-box {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    background-blend-mode: multiply;
+    margin-top: 3rem;
+}
 
+.video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #FFFFFF;;
+    color: #183B56;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
 
 
 

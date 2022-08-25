@@ -30,15 +30,29 @@
 <!-- home section ends -->
 
  <!-- about section starts -->
-<section class="about" id="about">
+{{-- <section class="about" id="about">
     <div class="image">
         <img src="{{ asset('images/about_chuzi.png') }}" alt="Chuzi Limekubali">
+        <a><img src="{{ asset('images/play.png') }}" alt="Press n Play"></a>
     </div>
     <div class="content">
-
+        <h3>#Chuzilimekubali</h3>
+        <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.dolor sit amet, consec tetur adipiscing elit. At viverra lectus tincidunt sed duis cursus aliquam. Viverra auctor adipiscing.</p>
+        <p>At viverra lectus tincidunt sed duis cursus aliquam. Vive rra auctor adipiscing.consec tetur adipiscing elit. At vive rra lectus tincidunt sed duis cursus aliquam.a auctor adipiscing.</p>
     </div>
 
-</section>
+</section> --}}
+<div class="container mt-4 pt-4">
+    <div class="row mt-4">
+        <div class="col-lg-6 col-md-5">
+            <div class="video-box" style="background-image: url('{{ asset('images/about_chuzi.png') }}')">
+                <span class="video-btn">
+                    <i class="fa fa-play"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- about section ends -->
 
 
