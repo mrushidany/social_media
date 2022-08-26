@@ -121,7 +121,7 @@ section{
 }
 
 .home-bg {
-    background: url('../../images/welcome.png') no-repeat;
+    background: url('../../images/welcome_bg.png') no-repeat;
     background-size: cover;
     background-position: center;
 }

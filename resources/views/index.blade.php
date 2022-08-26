@@ -1,4 +1,5 @@
-@extends('microsite.main')
+@extends('layouts.main')
+
 
 @section('content')
 
