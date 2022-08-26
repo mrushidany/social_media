@@ -8,13 +8,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{asset('images/icons/favicon.ico')}}" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ asset('dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/css/bootstrap.min.css') }}">
     <!-- Main css -->
     <link rel="stylesheet" href="{{ asset('dist/css/main.css') }}">
     <title>NCBA | Chuzi</title>
 </head>
 <body>
     @yield('content')
-    <script src="{{ asset('dist/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('dist/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

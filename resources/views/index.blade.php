@@ -11,15 +11,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About companion</a>
+                    <a class="nav-link" href="#about_companion">About companion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">How to participate</a>
+                    <a class="nav-link" href="#how_to_participate">How to participate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contestors">Contestors</a>
                 </li>
             </ul>
         </div>
