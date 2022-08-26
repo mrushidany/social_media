@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-{{-- Navbar section --}}
+<!-- Navbar section starts -->
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
     <div class="container">
         <a class="navbar-brand" href="#">
@@ -13,23 +13,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#nyumbani">Nyumbani</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about_companion">About companion</a>
+                    <a class="nav-link" href="#kuhusu_kampeni">Kuhusu Kampeni</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#how_to_participate">How to participate</a>
+                    <a class="nav-link" href="#jinsi_ya_kushiriki">Jinsi ya kushiriki</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                    <a class="nav-link" href="#ushuhuda">Ushuhuda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contestors">Contestors</a>
+                    <a class="nav-link" href="#washiriki">Washiriki </a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+<!-- Navbar section ends -->
 
 @endsection
