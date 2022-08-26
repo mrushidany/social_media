@@ -2,13 +2,13 @@
 
 @section('content')
 <!-- Navbar section starts -->
-<nav class="navbar navbar-expand-lg navbar-white bg-white">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('images/app/ncba_mpawa.png') }}" alt="NCBA MPAWA - Chuzi Limekubali">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span  class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -32,5 +32,18 @@
     </div>
 </nav>
 <!-- Navbar section ends -->
+
+<!-- Welcome section starts -->
+<section class="welcome">
+    <div class="row">
+        <ul id="all_slides">
+            <li class="slide active"></li>
+            <li class="slide"></li>
+          </ul>
+    </div>
+</section>
+
+<!-- Welcome section ends -->
+
 
 @endsection
