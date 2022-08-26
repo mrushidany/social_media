@@ -16,5 +16,14 @@
 <body>
     @yield('content')
     <script src="{{ asset('dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('dist/js/jquery.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.navbar-nav > li.nav-item > a.nav-link').click(function (e) {
+                $('ul.navbar-nav > li.nav-item > a').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 </html>

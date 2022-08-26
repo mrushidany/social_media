@@ -67,6 +67,11 @@ body {
     color: var(--blue);
 }
 
+.navbar .nav-item a > .active {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
 .navbar-brand  img {
     width: 70%;
 }
