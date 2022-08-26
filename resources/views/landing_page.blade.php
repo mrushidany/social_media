@@ -10,7 +10,7 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About companion</a>
-            {{-- <a href="#how">How to participate</a> --}}
+            <a href="#how">How to participate</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contestors">Contestors</a>
         </nav>
@@ -20,10 +20,10 @@
 <!-- header section ends -->
 
 <!-- home section starts -->
-<div class="home-bg">
+<div class="home-bg" data-aos="fade-down">
     <section class="home" id="home">
         <div class="content">
-            <img src="{{ asset('images/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
+            <img data-aos="fade-right" src="{{ asset('images/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
             <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
         </div>
     </section>
@@ -68,19 +68,35 @@
 <!-- about section ends -->
 
  <!-- How to participate section starts -->
- {{-- <div class="container participate-section" id="how">
+ <div class="container participate-section" id="how">
     <div class="row">
-        <h2>How to <span style="color: #3AB3E5">Participate</span></h2>
-        <div class="col-md-6 mt-4 pt-4">
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis varius tortor dolor eu. Adipiscing nisl at adipiscing ut.</p>
+        <h2>Jinsi ya <span style="color: #3AB3E5">Kushiriki</span></h2>
+        <div class="col-md-6 mt-2 pt-4">
+            <p class="">Kuwa mshindi wa Chuzi limekubali ni rahisi sana, fuata hatua chache hapo chini:</p>
         </div>
     </div>
-    <div class="row mt-3">
+    <div class="row">
         <div class="col-md-4">
-
+            <div class="digit"><h2>1</h2></div>
+            <div class="heading">Piga *150*00#</div>
+            <div class="highlight"></div>
+            <p class="description">Ili kuingia moja kwa moja kwenye menu yako ya M-Pesa.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="digit"><h2>2</h2></div>
+            <div class="heading">Chagua Mikopo na Akiba</div>
+            <div class="highlight"></div>
+            <div class="pointer">jjkjkjk</div>
+            <p class="description">Hili ni chaguo namba 5 katika menu yako.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="digit"><h2>3</h2></div>
+            <div class="heading">Chagua M-PAWA</div>
+            <div class="highlight"></div>
+            <p class="description">Hapa utakutana na hatua rahisi za kuweka akiba na kukopa.</p>
         </div>
     </div>
- </div> --}}
+ </div>
 <!-- How to participate section ends -->
 
 <!-- Word from winners section starts -->

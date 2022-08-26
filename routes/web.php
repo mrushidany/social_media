@@ -31,6 +31,14 @@ Route::get('/db', function () {
     return view('db_management');
 })->name('db_management');
 
+Route::get('/microsite', function(){
+    return view('microsite.index');
+})->name('microsite');
+
+Route::get('/privacy_policy', function () {
+    return view('privacy_policy');
+})->name('privacy_policy');
+
 // Facebook Authentication URL'S
 Route::prefix('facebook')->name('facebook')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('login');

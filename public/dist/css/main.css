@@ -469,12 +469,13 @@ section{
 
 .chuzi-background {
     position: absolute;
-    margin-top: -38rem;
-    margin-left: 20rem;
+    top: 132%;
+    left: 30%;
 }
 
 .participate-section {
-    margin-top: 8rem;
+    position: relative;
+    margin-top: 10rem;
 }
 
 .participate-section h2 {
@@ -490,6 +491,48 @@ section{
     line-height: 28px;
     color: #969696;
 }
+
+.participate-section .digit h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 105.005px;
+    line-height: 105px;
+    color: #3AB3E5;
+    margin: 10% 5%;
+}
+
+.participate-section .heading {
+    position: absolute;
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.8761px;
+    line-height: 22px;
+    color: #392B27;
+    margin-left: 2%;
+}
+ .participate-section .highlight {
+    content: "";
+    position: absolute;
+    width: 73px;
+    height: 5px;
+    background: #3AB3E5;
+    border-radius: 20.7823px;
+    transform: translateX(-35px);
+    margin-top: 40px;
+    margin-left: 4.5%;
+    margin-bottom: 2rem;
+ }
+
+ .description {
+    margin: 11rem 2rem;
+ }
+
+ .participate-section .pointer {
+    position: absolute;
+    top: 50%;
+ }
 
 
 .chuzi-background img {
@@ -578,10 +621,11 @@ section{
     letter-spacing: -0.249009px;
     color: #2F2B2A;
     margin-left: 1.5rem;
+
 }
 
 .social-card .body {
-    margin: 0 -1rem;
+    margin: 4rem -1rem;
 }
 
 .social-card .likes {
@@ -597,7 +641,7 @@ section{
     text-align: center;
     letter-spacing: -0.249009px;
     color: #000000;
-    margin: 0 1rem;
+    margin: -10rem 1rem;
 }
 
 .footer .box-container .box .social-links {
