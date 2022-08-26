@@ -35,12 +35,21 @@
 
 <!-- Welcome section starts -->
 <section class="welcome">
-    <div class="row">
+    <div class="hero">
         <ul id="all_slides">
             <li class="slide active"></li>
             <li class="slide"></li>
           </ul>
+          <div class="content">
+                <div class="col-md-8 col-sm-12">
+                    <img src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
+                    <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="text-danger">M-Pawa</span></p>
+                </div>
+
+        </div>
     </div>
+
+
 </section>
 
 <!-- Welcome section ends -->
