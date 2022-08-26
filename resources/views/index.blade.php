@@ -39,13 +39,23 @@
         <ul id="all_slides">
             <li class="slide active"></li>
             <li class="slide"></li>
-          </ul>
-          <div class="content">
-                <div class="col-md-8 col-sm-12">
-                    <img src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
-                    <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="text-danger">M-Pawa</span></p>
+        </ul>
+        <div class="content">
+            <div class="col-md-8 col-sm-12">
+                <img src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
+                <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="text-danger">M-Pawa</span></p>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="control-btns">
+                <div class="inner-focus">
+                    <div class="focus-icon">
+                        <span style="color: #392B27;">
+                        <i class="fa fa-play play"></i>
+                    </span>
+                    </div>
                 </div>
-
+            </div>
         </div>
     </div>
 
