@@ -39,6 +39,10 @@ body {
 }
 
 /* Navbar */
+nav {
+    position: sticky;
+}
+
 .navbar {
     background: var(--white);
     border-bottom: 0.2px solid #EBEBEB;
@@ -180,6 +184,45 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat
   }
+
+  /*  About section */
+
+ .about {
+    height: 65vh;
+    background: var(--white);
+    text-align: justify;
+ }
+
+ .about h3 {
+    background: var(--blue);
+    border-radius: 8.67453px;
+    font-weight: 700;
+    font-size: 17.3491px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 14px 25px 17px 14px;
+    width: 40%;
+    display: inline-block;
+ }
+
+ .about .title {
+    margin-top: 3rem !important;
+ }
+
+ .about .title h4 {
+    font-weight: 700;
+    font-size: 21.6863px;
+    line-height: 26px;
+    letter-spacing: 0.216863px;
+    color: var(--main-color);
+ }
+
+ .position {
+    margin-right: 34rem;
+    white-space: nowrap;
+ }
 
 /* Effects */
 

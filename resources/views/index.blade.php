@@ -34,7 +34,7 @@
 <!-- Navbar section ends -->
 
 <!-- Welcome section starts -->
-<section class="welcome">
+<section class="welcome" id="nyumbani">
     <div class="hero">
         <ul id="all_slides">
             <li class="slide active"></li>
@@ -58,11 +58,34 @@
             </div>
         </div>
     </div>
-
-
 </section>
-
 <!-- Welcome section ends -->
+
+<!-- About section starts -->
+<section class="about d-flex align-items-center" id="kuhusu_kampeni">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="{{ asset('images/app/about_chuzi.png') }}" alt="About NCBA MPAWA Chuzi Limekubali">
+            </div>
+            <div class="col mt-4">
+                <h3 class="mt-3 mb-5">#Chuzilimekubali</h3>
+                <p class="mt-3">Chuzi limekubali ukiwa na M-PAWA inayoletwa kwa ushirikiano wa Vodacom na M-PAWA. Kila unapoweka akiba, kukopa na kurejesha mkopo mapema basi unajishindia mpaka mara mbili (2) ya akiba yako. Kushinda ni rahisi sana, unapiga *150*00# unaingia kwenye MIKOPO NA AKIBA halafu unachagua M-PAWA na kufuata hatua rahisi za kuweka na kukopa.</p>
+                <p class="mt-4">Jaribu leo uwe miongoni mwa washindi wa Chuzi limekubali.</p>
+                <div class="row title">
+                    <div class="col">
+                        <img src="{{ asset('images/icons/avatar.png') }}" alt="Avatar">
+                    </div>
+                    <div class="col">
+                        <h4>Vincent Luggerius</h4>
+                        <p>Manager NCBA</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 @endsection
