@@ -128,6 +128,11 @@ section{
     background-position: center;
 }
 
+.home .hero {
+    margin: 0 0 !important;
+    --bs-gutter-x: 0;
+}
+
 .home-bg .home{
     min-height: 70rem;
     display: flex;
@@ -135,6 +140,7 @@ section{
 }
 
 .home-bg .home .content{
+    position: relative;
     width: 50rem;
     text-align: start;
     margin-top: 15rem;
@@ -471,8 +477,8 @@ section{
 
 .chuzi-background {
     position: absolute;
-    top: 132%;
-    left: 30%;
+    top: 165%;
+    right: 10%;
 }
 
 .participate-section {
