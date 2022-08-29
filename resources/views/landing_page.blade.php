@@ -22,15 +22,9 @@
 <!-- home section starts -->
 <div class="home-bg">
     <section class="home" id="nyumbani">
-        <div class="hero">
-            <ul id="all_slides">
-                <li class="slide active"></li>
-                <li class="slide"></li>
-            </ul>
-            <div class="content">
-                <img src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
-                <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
-            </div>
+        <div class="content">
+            <img src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
+            <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
         </div>
     </section>
 </div>

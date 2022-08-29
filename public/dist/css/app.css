@@ -128,11 +128,6 @@ section{
     background-position: center;
 }
 
-.home .hero {
-    margin: 0 0 !important;
-    --bs-gutter-x: 0;
-}
-
 .home-bg .home{
     min-height: 70rem;
     display: flex;
