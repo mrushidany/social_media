@@ -341,6 +341,7 @@ section{
     color: #969696;
 }
 
+
 .participate-section .digit h2 {
     font-family: 'Poppins', sans-serif !important;
     font-style: normal;
@@ -349,6 +350,14 @@ section{
     line-height: 105px;
     color: #3AB3E5;
     margin: 10% 5%;
+}
+
+.participate-section .digit {
+    background: url('../../images/mask.png') no-repeat;
+    background-size: auto;
+    background-position-y: 3rem;
+    background-position-x: -1rem;
+    padding-top: 0.8rem;
 }
 
 .participate-section .heading {
