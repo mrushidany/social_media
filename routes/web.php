@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('index');
-})->name('microsite');
+    return view('landing_page');
+})->name('landing_page');
 
 
 Route::get('/home', function () {

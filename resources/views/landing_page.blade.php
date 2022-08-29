@@ -8,8 +8,8 @@
             <img src="{{ asset('images/ncba_mpawa.png') }}" alt="">
         </a>
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About companion</a>
+            <a href="#nyumbani">Nyumbani</a>
+            <a href="#kuhusu_kampeni">Kuhusu Kampeni</a>
             <a href="#how">How to participate</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contestors">Contestors</a>
