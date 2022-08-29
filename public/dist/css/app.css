@@ -206,126 +206,6 @@ section{
     padding-bottom: 1rem;
 }
 
-.facility .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
-    align-items: flex-start;
-}
-
-.facility .box-container .box {
-    text-align: center;
-}
-
-.facility .box-container .box img {
-    height: 10rem;
-    margin-bottom: .5rem;
-}
-
-.facility .box-container .box h3 {
-    font-size: 2rem;
-    color: var(--black);
-    margin: 1rem 0;
-}
-
-.facility .box-container .box p {
-    line-height: 2;
-    font-size: 1.5rem;
-    color: var(--light-color);
-}
-
-.menu .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 2rem;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.menu .box-container .box{
-    text-align: center;
-}
-
-.menu .box-container .box img{
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.gallery .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 33rem);
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.gallery .box-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.team .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.team .box-container .box {
-    text-align: center;
-}
-
-.team .box-container .box img {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: .5rem;
-}
-
-.team .box-container .box h3 {
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.contact .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.contact .row .image {
-    flex: 1 1 50rem;
-}
-
-.contact .row .image img {
-    width: 100%;
-}
-
-.contact .row form {
-    flex: 1 1 30rem;
-    border: var(--border);
-    padding: 2rem;
-    text-align: center;
-}
-
-.contact .row form .btn {
-    border: none;
-}
-
-.contact .row form h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--black);
-}
-
-.contact .row form .box{
-    width: 100%;
-    padding: 1.4rem;
-    font-size: 1.8rem;
-    color: var(--black);
-    border: var(--border);
-    margin: 1rem 0;
-}
 
 .footer {
     margin-top: 8rem !important;
@@ -468,12 +348,6 @@ section{
     letter-spacing: 0.216863px;
 
     color: #392B27;
-}
-
-.chuzi-background {
-    position: absolute;
-    top: 165%;
-    right: 10%;
 }
 
 .participate-section {
@@ -678,28 +552,6 @@ section{
     60% {transform: translateY(-20px);}
 }
 
-.typewriter p {
-    overflow: auto; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: pre; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
 
 /* media queries */
 

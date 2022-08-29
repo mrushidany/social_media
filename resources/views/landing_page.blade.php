@@ -31,7 +31,7 @@
 <!-- home section ends -->
 
  <!-- about section starts -->
-<div class="container mt-4 pt-4" id="kuhusu_kampeni">
+<div class="container about mt-4 pt-4" id="kuhusu_kampeni">
     <div class="row mt-4">
         <div class="col-lg-6 col-md-5">
             <div class="video-box" style="background-image: url('{{ asset('images/app/about_chuzi.png') }}')">
@@ -386,6 +386,4 @@
 </section>
 
 <!-- footer section ends -->
-
-
 @endsection
