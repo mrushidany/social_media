@@ -100,7 +100,7 @@
 <!-- How to participate section ends -->
 
 <!-- Word from winners section starts -->
-<section class="winners mt-5" id="washiriki">
+<section class="winners mt-5" id="ushuhuda">
     <div class="container">
        <div class="row">
             <div class="col-md-6">
@@ -157,7 +157,7 @@
 <!-- Word from winners section ends -->
 
 <!-- Chuzi Challenge section starts -->
-<div class="container pt-0 participate-section mb-3" id="contestors">
+<div class="container pt-0 participate-section mb-3" id="washiriki">
     <div class="row">
         <h2>Chuzi <span style="color: #3AB3E5">Challenge</span></h2>
         <div class="col-md-6 mt-3 pt-4">

@@ -120,6 +120,7 @@ class SocialMediaAuthenticationController extends Controller
     }
 
     public function hashtagSearch(){
+        return redirect()->route('landing_page',"#washiriki");
         $client = new Client();
         $access_token = AccessToken::where('user_id', 1)->select('live_token')->first();
 
