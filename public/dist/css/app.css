@@ -327,6 +327,13 @@ section{
     margin-top: 10rem;
 }
 
+.participate-section .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+    justify-content: space-between;
+}
+
 .participate-section h2 {
     font-weight: 700;
     font-size: 40px;
@@ -358,6 +365,7 @@ section{
     background-position-y: 3rem;
     background-position-x: -1rem;
     padding-top: 0.8rem;
+
 }
 
 .participate-section .heading {
@@ -370,6 +378,14 @@ section{
     color: #392B27;
     margin-left: 2%;
 }
+
+.participate-section .heading .arrow {
+    background: #3AB3E5;
+    opacity: 0.14;
+
+}
+
+
  .participate-section .highlight {
     content: "";
     position: absolute;

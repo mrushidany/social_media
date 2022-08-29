@@ -76,22 +76,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col">
             <div class="digit"><h2>1</h2></div>
-            <div class="heading">Piga *150*00#</div>
+            <div class="heading">Piga *150*00#<span class="arrow" style="margin: 0 20rem;"><img src="{{ asset('images/icons/right-blue-arrow.png') }}"></span></div>
             <div class="highlight"></div>
             <p class="description">Ili kuingia moja kwa moja kwenye menu yako ya M-Pesa.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col">
             <div class="digit"><h2>2</h2></div>
-            <div class="heading">Chagua Mikopo na Akiba</div>
+            <div class="heading">Chagua Mikopo na Akiba<span class="arrow" style="margin: 0 8rem;"><img src="{{ asset('images/icons/right-blue-arrow.png') }}"></span></div>
             <div class="highlight"></div>
             <div class="pointer"></div>
             <p class="description">Hili ni chaguo namba 5 katika menu yako.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col">
             <div class="digit"><h2>3</h2></div>
-            <div class="heading">Chagua M-PAWA</div>
+            <div class="heading">Chagua M-PAWA<span class="arrow" style="margin: 0 5.5rem;"><img src="{{ asset('images/icons/right-blue-arrow.png') }}"></span></div>
             <div class="highlight"></div>
             <p class="description">Hapa utakutana na hatua rahisi za kuweka akiba na kukopa.</p>
         </div>
