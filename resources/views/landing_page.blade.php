@@ -5,7 +5,7 @@
 <header class="header">
     <section class="flex">
         <a href="" class="logo">
-            <img src="{{ asset('images/ncba_mpawa.png') }}" alt="">
+            <img src="{{ asset('images/app/ncba_mpawa.png') }}" alt="NCBA MPAWA - Chuzi Limekubali">
         </a>
         <nav class="navbar">
             <a href="#nyumbani">Nyumbani</a>
