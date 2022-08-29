@@ -35,6 +35,10 @@ Route::get('/privacy_policy', function () {
     return view('privacy_policy');
 })->name('privacy_policy');
 
+Route::get('/microsite', function() {
+    return view('index');
+})->name('microsite');
+
 // Facebook Authentication URL'S
 Route::prefix('facebook')->name('facebook')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('login');
