@@ -10,9 +10,9 @@
         <nav class="navbar">
             <a href="#nyumbani">Nyumbani</a>
             <a href="#kuhusu_kampeni">Kuhusu Kampeni</a>
-            <a href="#how">How to participate</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contestors">Contestors</a>
+            <a href="#jinsi_ya_kushiriki">Jinsi ya kushiriki</a>
+            <a href="#ushuhuda">Ushuhuda</a>
+            <a href="#washiriki">Washiriki</a>
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
@@ -21,7 +21,7 @@
 
 <!-- home section starts -->
 <div class="home-bg" data-aos="fade-down">
-    <section class="home" id="home">
+    <section class="home" id="nyumbani">
         <div class="content">
             <img data-aos="fade-right" src="{{ asset('images/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
             <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
@@ -31,7 +31,7 @@
 <!-- home section ends -->
 
  <!-- about section starts -->
-<div class="container mt-4 pt-4" id="about">
+<div class="container mt-4 pt-4" id="kuhusu_kampeni">
     <div class="row mt-4">
         <div class="col-lg-6 col-md-5">
             <div class="video-box" style="background-image: url('{{ asset('images/about_chuzi.png') }}')">
@@ -68,7 +68,7 @@
 <!-- about section ends -->
 
  <!-- How to participate section starts -->
- <div class="container participate-section" id="how">
+ <div class="container participate-section" id="jinsi_ya_kushiriki">
     <div class="row">
         <h2>Jinsi ya <span style="color: #3AB3E5">Kushiriki</span></h2>
         <div class="col-md-6 mt-2 pt-4">
@@ -86,7 +86,7 @@
             <div class="digit"><h2>2</h2></div>
             <div class="heading">Chagua Mikopo na Akiba</div>
             <div class="highlight"></div>
-            <div class="pointer">jjkjkjk</div>
+            <div class="pointer"></div>
             <p class="description">Hili ni chaguo namba 5 katika menu yako.</p>
         </div>
         <div class="col-md-4">
@@ -100,7 +100,7 @@
 <!-- How to participate section ends -->
 
 <!-- Word from winners section starts -->
-<section class="winners mt-5" id="testimonials">
+<section class="winners mt-5" id="washiriki">
     <div class="container">
        <div class="row">
             <div class="col-md-6">
