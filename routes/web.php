@@ -31,10 +31,6 @@ Route::get('/db', function () {
     return view('db_management');
 })->name('db_management');
 
-Route::get('/microsite', function(){
-    return view('index');
-})->name('microsite');
-
 Route::get('/privacy_policy', function () {
     return view('privacy_policy');
 })->name('privacy_policy');
