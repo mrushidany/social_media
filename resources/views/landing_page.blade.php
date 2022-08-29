@@ -59,10 +59,10 @@
                     </div>
                 </div>
             </div>
+            <div class="chuzi-background">
+                <img src="{{ asset('images/app/chuzi-bg.png') }}" alt="">
+            </div>
         </div>
-    </div>
-    <div class="chuzi-background">
-        <img src="{{ asset('images/app/chuzi-bg.png') }}" alt="">
     </div>
 </div>
 <!-- about section ends -->

@@ -153,6 +153,16 @@ section{
     padding: 1rem 0;
 }
 
+.about {
+    position: relative;
+}
+
+.about .chuzi-background {
+    position: absolute;
+    top: 23%;
+    left: 20%;
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -270,6 +280,7 @@ section{
 .chuzi {
     margin-top: 4rem;
     margin-left: 3rem;
+    position: relative;
 }
 
 .title {
