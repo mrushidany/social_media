@@ -20,10 +20,10 @@
 <!-- header section ends -->
 
 <!-- home section starts -->
-<div class="home-bg" data-aos="fade-down">
+<div class="home-bg" style="background: url('{{ asset('images/app/welcome_bg.png') }}') no-repeat;">
     <section class="home" id="nyumbani">
         <div class="content">
-            <img data-aos="fade-right" src="{{ asset('images/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
+            <img data-aos="fade-right" src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
             <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
         </div>
     </section>
@@ -34,7 +34,7 @@
 <div class="container mt-4 pt-4" id="kuhusu_kampeni">
     <div class="row mt-4">
         <div class="col-lg-6 col-md-5">
-            <div class="video-box" style="background-image: url('{{ asset('images/about_chuzi.png') }}')">
+            <div class="video-box" style="background-image: url('{{ asset('images/app/about_chuzi.png') }}')">
                 <span class="video-btn">
                     <i class="fa fa-play"></i>
                 </span>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col">
-                        <img src="{{ asset('images/avatar.png') }}">
+                        <img src="{{ asset('images/icons/avatar.png') }}">
                     </div>
                     <div class="col mt-4 subtitle">
                         <h4>Vincent Luggerius</h4>
@@ -62,7 +62,7 @@
         </div>
     </div>
     <div class="chuzi-background">
-        <img src="{{ asset('images/chuzi-bg.png') }}" alt="">
+        <img src="{{ asset('images/app/chuzi-bg.png') }}" alt="">
     </div>
 </div>
 <!-- about section ends -->
