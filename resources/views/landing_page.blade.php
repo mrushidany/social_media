@@ -20,10 +20,10 @@
 <!-- header section ends -->
 
 <!-- home section starts -->
-<div class="home-bg" style="background: url('{{ asset('images/app/welcome_bg.png') }}') no-repeat;">
+<div class="home-bg">
     <section class="home" id="nyumbani">
         <div class="content">
-            <img data-aos="fade-right" src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
+            <img src="{{ asset('images/app/chuzi_limekubali.png') }}" alt="Chuzi Limekubali" class="bounce">
             <p class="mt-3">Shinda dabo ya akiba ukisevu na <span class="red">M-Pawa</span></p>
         </div>
     </section>

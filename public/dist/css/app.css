@@ -123,6 +123,7 @@ section{
 }
 
 .home-bg {
+    background: url('../../images/app/welcome_bg.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
