@@ -32,7 +32,7 @@ Route::get('/db', function () {
 })->name('db_management');
 
 Route::get('/microsite', function(){
-    return view('microsite.index');
+    return view('index');
 })->name('microsite');
 
 Route::get('/privacy_policy', function () {
