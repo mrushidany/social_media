@@ -132,7 +132,7 @@ class SocialMediaAuthenticationController extends Controller
                     'token_type' => $live_token->token_type,
                     'expires_in' => $live_token->expires_in
                 ]);
-                return redirect()->route('welcome');
+                return redirect()->view('welcome');
             }else {
                 return redirect()->route('home');
             }
