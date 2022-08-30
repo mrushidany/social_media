@@ -29,7 +29,12 @@ class SocialMediaAuthenticationController extends Controller
                 $data = ['name' => $user->name, 'email' => $user->email, 'password' => $user->name.'@'.$user->id];
                 if(Auth::attempt($data)){
                     Auth::loginUsingId($check_user->id);
-                    return view('welcome');
+                    $fb_data = [
+                        'status' => 'facebook',
+                        'name' => $user->name,
+                        'email' => $user->email
+                    ];
+                    return view('welcome')->with($fb_data);
                 }
             }
             $save_user = User::updateOrCreate([
@@ -45,7 +50,12 @@ class SocialMediaAuthenticationController extends Controller
             }
             if($save_facebook_user){
                 Auth::loginUsingId($save_user->id);
-                return view('welcome');
+                $fb_data = [
+                    'status' => 'facebook',
+                    'name' => $save_user->name,
+                    'email' => $save_user->email
+                ];
+                return view('welcome')->with($fb_data);
             }else {
                 return redirect()->route('home');
             }
@@ -132,7 +142,12 @@ class SocialMediaAuthenticationController extends Controller
                     'token_type' => $live_token->token_type,
                     'expires_in' => $live_token->expires_in
                 ]);
-                return view('welcome');
+                $insta_data = [
+                    'status' => 'instagram',
+                    'username' => $save_user->username,
+                    'account_type' => $save_user->account_type
+                ];
+                return view('welcome')->with($insta_data);
             }else {
                 return redirect()->route('home');
             }
