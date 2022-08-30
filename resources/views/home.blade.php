@@ -13,7 +13,7 @@
                 </div>
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mt-24">
                     <a class="btn btn-primary mr-5" style="background-color: #3b5998; margin-right: 2rem;" href="{{ route('facebooklogin') }}" role="button"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="{{ route('instagramlogin') }}" role="button"><i class="fab fa-instagram"></i></a>
+                    {{-- <a class="btn btn-primary" style="background-color: #ac2bac;" href="{{ route('instagramlogin') }}" role="button"><i class="fab fa-instagram"></i></a> --}}
                 </div>
             </div>
         </div>
