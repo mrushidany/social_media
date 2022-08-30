@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\DatabaseManagementController;
-use App\Http\Controllers\SocialMediaAuthenticationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,48 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
-    return view('landing_page');
-})->name('landing_page');
-
-
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
-
-Route::get('/welcome', function () {
     return view('welcome');
-})->name('welcome');
-
-Route::get('/db', function () {
-    return view('db_management');
-})->name('db_management');
-
-Route::get('/privacy_policy', function () {
-    return view('privacy_policy');
-})->name('privacy_policy');
-
-Route::get('/microsite', function() {
-    return view('index');
-})->name('microsite');
-
-// Facebook Authentication URL'S
-Route::prefix('facebook')->name('facebook')->group(function (){
-    Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('login');
-    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('callback');
-    Route::get('deauthorize', [SocialMediaAuthenticationController::class, 'deauthorizeUser'])->name('deauthorize');
-    Route::get('deleteData', [SocialMediaAuthenticationController::class, 'deleteData'])->name('deleteData');
 });
 
-//Instagram Authentication URL'S
-Route::prefix('instagram')->name('instagram')->group(function (){
-    Route::get('auth', [SocialMediaAuthenticationController::class, 'instagramLogin'])->name('login');
-    Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromInstagram'])->name('callback');
-    Route::get('hashtag', [SocialMediaAuthenticationController::class, 'hashtagSearch'])->name('hashtag');
-});
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-//Database Management Settings
-Route::post('/db/migrate', [DatabaseManagementController::class, 'migrate'])->name('migrate');
-Route::post('/db/rollback', [DatabaseManagementController::class, 'rollback'])->name('rollback');
-Route::post('/db/clear_cache', [DatabaseManagementController::class, 'clear_cache'])->name('clear_cache');
-
+require __DIR__.'/auth.php';
