@@ -29,7 +29,7 @@ class SocialMediaAuthenticationController extends Controller
                 $data = ['name' => $user->name, 'email' => $user->email, 'password' => $user->name.'@'.$user->id];
                 if(Auth::attempt($data)){
                     $request->session()->regenerate();
-                    return redirect()->route('welcome');
+                    return redirect()->intended(route('welcome'));
                 }
             }
             $save_user = User::updateOrCreate([
