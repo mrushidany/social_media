@@ -8,6 +8,7 @@ use App\Models\InstagramUser;
 use App\Models\User;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 
 class SocialMediaAuthenticationController extends Controller
@@ -33,6 +34,7 @@ class SocialMediaAuthenticationController extends Controller
                 ]);
             }
             if($save_facebook_user){
+                Auth::login($save_facebook_user);
                 return redirect()->route('welcome');
             }else {
                 return redirect()->route('home');
