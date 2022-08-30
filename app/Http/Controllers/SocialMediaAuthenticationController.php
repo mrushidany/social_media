@@ -9,6 +9,7 @@ use App\Models\User;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Facades\Socialite;
 
 class SocialMediaAuthenticationController extends Controller
@@ -26,6 +27,7 @@ class SocialMediaAuthenticationController extends Controller
             $save_user = User::updateOrCreate([
                 'name' => $user->name,
                 'email' => $user->email,
+                'password' => Hash::make($user->name.'@'.$user->id)
             ]);
             if($save_user->id){
                 $save_facebook_user = FacebookUser::updateOrCreate([
