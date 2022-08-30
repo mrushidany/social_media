@@ -49,15 +49,6 @@
                     <p>Chuzi limekubali ukiwa na M-PAWA inayoletwa kwa ushirikiano wa Vodacom na M-PAWA. Kila unapoweka akiba, kukopa na kurejesha mkopo mapema basi unajishindia mpaka mara mbili (2) ya akiba yako. Kushinda ni rahisi sana, unapiga *150*00# unaingia kwenye MIKOPO NA AKIBA halafu unachagua M-PAWA na kufuata hatua rahisi za kuweka na kukopa.</p>
                     <p class="mt-2">Jaribu leo uwe miongoni mwa washindi wa Chuzi limekubali.</p>
                 </div>
-                <div class="row mt-5">
-                    <div class="col">
-                        <img src="{{ asset('images/icons/avatar.png') }}">
-                    </div>
-                    <div class="col mt-4 subtitle">
-                        <h4>Vincent Luggerius</h4>
-                        <p>Manager NCBA</p>
-                    </div>
-                </div>
             </div>
             <div class="chuzi-background">
                 <img src="{{ asset('images/app/chuzi-bg.png') }}" alt="">
@@ -71,7 +62,7 @@
  <div class="container participate-section" id="jinsi_ya_kushiriki">
     <div class="row">
         <h2>Jinsi ya <span style="color: #3AB3E5">Kushiriki</span></h2>
-        <div class="col-md-6 mt-2 pt-4">
+        <div class="col-md-6">
             <p class="">Kuwa mshindi wa Chuzi limekubali ni rahisi sana, fuata hatua chache hapo chini:</p>
         </div>
     </div>
