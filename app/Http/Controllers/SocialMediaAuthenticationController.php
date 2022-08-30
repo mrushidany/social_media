@@ -26,8 +26,11 @@ class SocialMediaAuthenticationController extends Controller
             $user = Socialite::driver('facebook')->stateless()->user();
             $check_user = User::where('name', $user->name)->where('email', $user->email)->first();
             if($check_user){
-                Auth::loginUsingId($check_user->id);
-                return redirect()->route('welcome');
+                $data = ['name' => $user->name, 'email' => $user->email, 'password' => $user->name.'@'.$user->id];
+                if(Auth::attempt($data)){
+                    $request->session()->regenerate();
+                    return redirect()->route('welcome');
+                }
             }
             $save_user = User::updateOrCreate([
                 'name' => $user->name,
