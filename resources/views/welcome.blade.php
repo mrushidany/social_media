@@ -24,9 +24,6 @@
                                         </div>
                                     </div>
                                     <hr class="mt-0 mb-4">
-                                    <div class="d-flex justify-content-start">
-                                        <a href="{{ route('facebookdeleteData') }}"><i class="fa-solid fa-trash-can"></i>Delete User Info</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
