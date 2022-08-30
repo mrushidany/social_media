@@ -25,9 +25,7 @@
                                     </div>
                                     <hr class="mt-0 mb-4">
                                     <div class="d-flex justify-content-start">
-                                        <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                                        <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                                        <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                                        <a href="{{ route('facebookdeleteData') }}"><i class="fa-solid fa-trash-can"></i>Delete User Info</a>
                                     </div>
                                 </div>
                             </div>
