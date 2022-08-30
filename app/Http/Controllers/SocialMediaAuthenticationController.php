@@ -34,7 +34,7 @@ class SocialMediaAuthenticationController extends Controller
                 ]);
             }
             if($save_facebook_user){
-                Auth::login($save_user);
+                Auth::loginUsingId($save_user->id);
                 return redirect()->route('welcome');
             }else {
                 return redirect()->route('home');
