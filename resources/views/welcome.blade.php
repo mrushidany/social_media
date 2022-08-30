@@ -63,6 +63,18 @@
                 </div>
             </div>
         </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mt-24">
+                        <a class="btn btn-primary mr-5" style="background-color: #3b5998; margin-right: 2rem;" href="{{ route('instagramhashtag') }}" role="button">View Insights</a>
+                        {{-- <a class="btn btn-primary" style="background-color: #ac2bac;" href="{{ route('instagramlogin') }}" role="button"><i class="fab fa-instagram"></i></a> --}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
 @endif
 
 
