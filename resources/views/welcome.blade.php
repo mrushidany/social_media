@@ -2,6 +2,7 @@
 
 @section('content')
 
+{{ dd($session) }}
 @auth
 <p>We are already authenticated</p>
 <div class="d-flex justify-content-center">
