@@ -28,9 +28,8 @@ class SocialMediaAuthenticationController extends Controller
             if($check_user){
                 $data = ['name' => $user->name, 'email' => $user->email, 'password' => $user->name.'@'.$user->id];
                 if(Auth::attempt($data)){
-                    $session_data = ['name' => $user->name, 'email' => $user->email];
-                    $session = session($session_data);
-                    return redirect()->intended(route('welcome'))->with($session);
+                    Auth::loginUsingId($check_user->id);
+                    return redirect()->intended(route('welcome'));
                 }
             }
             $save_user = User::updateOrCreate([
