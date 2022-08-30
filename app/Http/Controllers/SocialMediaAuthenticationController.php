@@ -29,7 +29,7 @@ class SocialMediaAuthenticationController extends Controller
                 $data = ['name' => $user->name, 'email' => $user->email, 'password' => $user->name.'@'.$user->id];
                 if(Auth::attempt($data)){
                     Auth::loginUsingId($check_user->id);
-                    return redirect()->intended(route('welcome'));
+                    return view('welcome');
                 }
             }
             $save_user = User::updateOrCreate([
@@ -45,7 +45,7 @@ class SocialMediaAuthenticationController extends Controller
             }
             if($save_facebook_user){
                 Auth::loginUsingId($save_user->id);
-                return redirect()->route('welcome');
+                return view('welcome');
             }else {
                 return redirect()->route('home');
             }
