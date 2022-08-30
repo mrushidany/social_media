@@ -9,10 +9,11 @@
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                    <p class="lead fw-normal mb-0 me-3">Sign in with :-</p>
-                    <a href="{{ route('facebooklogin') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-facebook-f"></i></a>
-                    <a href="{{ route('instagramlogin') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-instagram"></i></a>
-                    <a href="{{ route('instagramhashtag') }}" class="btn btn-primary btn-floating mx-1"><i class="fab fa-globe"></i></a>
+                    <p class="lead fw-normal mb-0 me-3 fs-3" >Sign in with :-</p><br />
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mt-24">
+                    <a class="btn btn-primary mr-5" style="background-color: #3b5998; margin-right: 2rem;" href="{{ route('facebooklogin') }}" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="{{ route('instagramlogin') }}" role="button"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
