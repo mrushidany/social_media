@@ -23,10 +23,6 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
-
 Route::get('/db', function () {
     return view('db_management');
 })->name('db_management');
