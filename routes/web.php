@@ -43,6 +43,8 @@ Route::get('/microsite', function() {
 Route::prefix('facebook')->name('facebook')->group(function (){
     Route::get('auth', [SocialMediaAuthenticationController::class, 'facebookLogin'])->name('login');
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('callback');
+    Route::get('deauthorize', [SocialMediaAuthenticationController::class, 'deauthorizeUser'])->name('deauthorize');
+    Route::get('deleteData', [SocialMediaAuthenticationController::class, 'deleteData'])->name('deleteData');
 });
 
 //Instagram Authentication URL'S

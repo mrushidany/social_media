@@ -42,6 +42,17 @@ class SocialMediaAuthenticationController extends Controller
         }
     }
 
+    public function deauthorizeUser()
+    {
+
+    }
+
+    public function deleteData()
+    {
+
+    }
+
+
     public function instagramLogin()
     {
         $client_id = env('INSTAGRAM_CLIENT_ID');
