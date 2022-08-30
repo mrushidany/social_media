@@ -24,6 +24,12 @@
                                         </div>
                                     </div>
                                     <hr class="mt-0 mb-4">
+                                    <div class="row pt-1">
+                                        <div class="col-12 mt-3">
+                                            <h6>Get Hashtag</h6>
+                                                <a class="btn btn-primary mr-5" style="background-color: #3b5998; color:#f4f5f7; margin-right: 2rem;" href="{{ route('instagramhashtag') }}" role="button">View Insights</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -61,17 +67,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mt-24">
-                            <a class="btn btn-primary mr-5" style="background-color: #3b5998; color:#f4f5f7; margin-right: 2rem;" href="{{ route('instagramhashtag') }}" role="button">View Insights</a>
-                            {{-- <a class="btn btn-primary" style="background-color: #ac2bac;" href="{{ route('instagramlogin') }}" role="button"><i class="fab fa-instagram"></i></a> --}}
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
