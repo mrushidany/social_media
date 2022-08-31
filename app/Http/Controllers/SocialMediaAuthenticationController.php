@@ -61,6 +61,27 @@ class SocialMediaAuthenticationController extends Controller
         }
     }
 
+    public function facebookHashtagSearch(){
+        $client = new Client();
+
+        $client_id = env('FACEBOOK_CLIENT_ID');
+        $client_secret = env('FACEBOOK_CLIENT_SECRET');
+        $redirectUri = env('FACEBOOK_REDIRECT_URI');
+
+        //Get access token
+        $response = $client->request('POST', 'https://api.facebook.com/oauth/access_token', [
+            'form_params' => [
+                'app_id' => $client_id,
+                'app_secret' => $client_secret,
+                'grant_type' => 'authorization_code',
+                'redirect_uri' => $redirectUri,
+            ]
+        ]);
+
+        dd($response);
+
+    }
+
     public function deauthorizeUser()
     {
 
@@ -164,10 +185,6 @@ class SocialMediaAuthenticationController extends Controller
         $response = $client->request('GET', "https://graph.instagram.com/ig_hashtag_search?user_id={$instagram_user->user_id}&q=coke");
 
         dd($response);
-    }
-
-    public function facebookHashtagSearch(){
-
     }
 
 }

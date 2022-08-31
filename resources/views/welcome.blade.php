@@ -27,7 +27,7 @@
                                     <div class="row pt-1">
                                         <div class="col-12 mt-3">
                                             <h6>Get Hashtag</h6>
-                                                <a class="btn btn-primary mr-5" style="background-color: #3b5998; color:#f4f5f7; margin-right: 2rem;" href="{{ route('instagramhashtag') }}" role="button">View Insights</a>
+                                                <a class="btn btn-primary mr-5" style="background-color: #3b5998; color:#f4f5f7; margin-right: 2rem;" href="{{ route('facebookhashtag') }}" role="button">View Insights</a>
                                         </div>
                                     </div>
                                 </div>
