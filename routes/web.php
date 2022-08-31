@@ -41,6 +41,7 @@ Route::prefix('facebook')->name('facebook')->group(function (){
     Route::get('callback', [SocialMediaAuthenticationController::class, 'callbackFromFacebook'])->name('callback');
     Route::get('deauthorize', [SocialMediaAuthenticationController::class, 'deauthorizeUser'])->name('deauthorize');
     Route::get('deleteData', [SocialMediaAuthenticationController::class, 'deleteData'])->name('deleteData');
+    Route::get('hashtag', [SocialMediaAuthenticationController::class, 'facebookHashtagSearch'])->name('hashtag');
 });
 
 //Instagram Authentication URL'S

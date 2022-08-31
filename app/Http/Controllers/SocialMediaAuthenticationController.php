@@ -26,16 +26,13 @@ class SocialMediaAuthenticationController extends Controller
             $user = Socialite::driver('facebook')->stateless()->user();
             $check_user = User::where('name', $user->name)->where('email', $user->email)->first();
             if($check_user){
-                $data = ['name' => $user->name, 'email' => $user->email, 'password' => $user->name.'@'.$user->id];
-                if(Auth::attempt($data)){
-                    Auth::loginUsingId($check_user->id);
-                    $fb_data = [
-                        'status' => 'facebook',
-                        'name' => $user->name,
-                        'email' => $user->email
-                    ];
-                    return view('welcome')->with($fb_data);
-                }
+                Auth::loginUsingId($check_user->id);
+                $fb_data = [
+                    'status' => 'facebook',
+                    'name' => $user->name,
+                    'email' => $user->email
+                ];
+                return view('welcome')->with($fb_data);
             }
             $save_user = User::updateOrCreate([
                 'name' => $user->name,
@@ -167,6 +164,10 @@ class SocialMediaAuthenticationController extends Controller
         $response = $client->request('GET', "https://graph.instagram.com/ig_hashtag_search?user_id={$instagram_user->user_id}&q=coke");
 
         dd($response);
+    }
+
+    public function facebookHashtagSearch(){
+
     }
 
 }
