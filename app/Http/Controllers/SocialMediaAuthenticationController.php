@@ -62,6 +62,8 @@ class SocialMediaAuthenticationController extends Controller
     }
 
     public function facebookHashtagSearch(){
+        $user = Socialite::driver('facebook')->stateless()->user();
+        dd($user);
         $client = new Client();
 
         $client_id = env('FACEBOOK_CLIENT_ID');
